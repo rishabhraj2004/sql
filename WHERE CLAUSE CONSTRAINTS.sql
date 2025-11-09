@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS STUDENTS;
+ USE STUDENTS;
+ 
+ DROP TABLE IF EXISTS STUDENTS;
+ 
+ CREATE TABLE STUDENTS (
+  ROLLNO INT PRIMARY KEY,
+  NAME VARCHAR(50),
+ MARKS INT NOT NULL,
+ GRADE VARCHAR(1),
+ CITY VARCHAR(50) );
+ 
+ INSERT INTO STUDENTS
+  ( ROLLNO, NAME, MARKS, GRADE, CITY)
+  VALUES
+  (41, "anil", 78, "c", "pune"),
+  (42, "bhumika", 93, "a", "mumbai"),
+  (43, "chetan", 85, "b", "mumbai"),
+  (44, "dhruv", 96, "A", "delhi" ),
+  (45, "emanuel", 12, "f", "delhi"),
+  (46 , "farah" , 82, "b", "delhi");
+  
+  SELECT * FROM STUDENTS WHERE MARKS > 80;
+  SELECT * FROM STUDENTS WHERE CITY = "MUMBAI";
+  SELECT * FROM STUDENTS WHERE MARKS +10 > 100;
+  SELECT * FROM STUDENTS WHERE MARKS = 93;
+  SELECT * FROM STUDENTS WHERE 
+  
